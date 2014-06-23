@@ -1,0 +1,41 @@
+@base: #CCCCCC;
+@hover: red;
+
+@navcolor: rgba(25, 25, 88, 0.69);
+@navTabs: rgba(255, 255, 255, 0.50);
+
+@header: rgb(36, 36, 36);
+@offWhite: #DBDBDB;
+
+
+.rounded-corners (@radius: 5px) {
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+}
+
+.table-styling (@width: 80%, @margin:10%) {
+	border-collapse:collapse;
+	width: @width;
+	float: left;
+	margin:0 @margin;
+	td, th {
+		padding: 10px;	
+	}
+	tr:nth-child(even) {
+		background-color: @base;
+	}
+	tr:hover {
+		background-color: @hover;
+	}
+
+}
+
+.form-styling () {
+	width:100%;
+	input, select {
+		padding:5px 10px;
+		float: left;	
+	}
+
+}

@@ -1,0 +1,61 @@
+@import "lib.less";
+
+body {
+	margin:0;
+}
+
+.wrapper {
+	max-width: 1200px;
+	min-width: 340px;
+	margin: 0 auto;
+}
+
+
+#header {
+	width:100%;
+	float: left;
+	background-color: @header;
+}
+
+#header a {
+	text-align: center;
+	text-decoration: none;
+	color: @offWhite;
+}
+
+.nav-wrapper {
+	width: 100%;
+	float: left;
+	background-color: @navcolor;
+	
+}
+
+#navigation {
+	width:90%;
+	margin:0 5%;
+	float: left;
+	span {
+		min-width:100px;
+		float: left;
+		padding:10px 10px;
+		background-color: @navTabs;
+		text-align: center;
+		margin: 0 1px;
+		img {
+			width:20px;
+			float:right;
+			margin-left: 15px;
+			opacity: .9;
+			border-radius: 10px;
+		}
+		img:hover {
+			background-color: @hover;
+		}
+	}
+	span:hover {
+		cursor: pointer;
+	}
+	.active-nav {
+		background-color: #FFFFFF;
+	}
+}

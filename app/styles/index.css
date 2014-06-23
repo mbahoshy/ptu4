@@ -1,0 +1,37 @@
+.search-container {
+  float: left;
+  width: 100%;
+}
+.search-container form {
+  width: 100%;
+}
+.search-container form input,
+.search-container form select {
+  padding: 5px 10px;
+  float: left;
+}
+.search-container input {
+  width: 60%;
+}
+.search-container input[type='submit'] {
+  width: 10%;
+}
+.search-container select {
+  width: 10%;
+}
+.customer-listings {
+  border-collapse: collapse;
+  width: 80%;
+  float: left;
+  margin: 0 10%;
+}
+.customer-listings td,
+.customer-listings th {
+  padding: 10px;
+}
+.customer-listings tr:nth-child(even) {
+  background-color: #cccccc;
+}
+.customer-listings tr:hover {
+  background-color: #ff0000;
+}

@@ -1,0 +1,32 @@
+<!-- home-view.html -->
+
+<div class='wrapper'>
+	<div class='search-container'>
+		<form>
+			<input ng-keyup='instantSearch()' ng-model='data.search.terms' type='text' placeholder='enter search terms' name='searchterms'>
+			<select ng-model='data.search.parameters'>
+				<option value='nameLastSearch' selected="selected">Last Name</option>
+				<option value='nameFirstSearch'>First Name</option>
+				<option value='citySearch'>City Name</option>
+			</select>
+			<input type='submit' value='Search'>
+		</form>
+	</div>
+
+	<table class='customer-listings'>
+		<tr>
+			<th>Last Name</th>
+			<th>First Name</th>
+			<th>Street</th>
+			<th>City</th>
+		</tr>
+		<tr ng-repeat='customer in data.customerList' ng-click='customerClick(customer)'>
+			<td>{{customer.nameLast}}</td>
+			<td>{{customer.nameFirst}}</td>
+			<td>{{customer.address.street}}</td>
+			<td>{{customer.address.city}}</td>
+		</tr>
+	</table>
+	<div><a href='#/addCustomer'>Add Customer</a></div>
+
+</div>

@@ -1,0 +1,38 @@
+<div>
+	<div class='customer-info-container'>
+		{{data.customer.nameFirst}}
+		{{data.customer.nameLast}}
+	</div>
+	<table class='pm-history-container'>
+		<tr>
+			<th>Equipment Type</th>
+			<th>Make</th>
+			<th>Model</th>
+			<th>Last Serviced</th>
+		<tr>
+		<tr ng-click='pmClick(pm)' ng-repeat='pm in data.customer.pm'>
+			<td>{{pm.type}}</td>
+			<td>{{pm.make}}</td>
+			<td>{{pm.model}}</td>
+			<td>{{pm.date}}</td>
+		</tr>
+	</table>
+	<div class='equipment-container'>
+		<div ng-repeat='equipment in data.customer.equipment' class='equipment'>
+			{{equipment.type}}
+			{{equipment.make}}
+			{{equipment.model}}
+			{{equipment.serial}}
+			<a href=''>
+				<div class='equipment-history-button'>
+					View History
+				</div>
+			</a>
+			<a href=''>
+				<div class='create-pm-button'>
+					Create PM
+				</div>
+			</a>
+		</div>
+	</div>
+</div>

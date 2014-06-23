@@ -1,0 +1,35 @@
+/* display-customer.less */
+.customer-info-container {
+  float: left;
+  width: 100%;
+}
+.pm-history-container {
+  border-collapse: collapse;
+  width: 50%;
+  float: left;
+  margin: 0 5%;
+}
+.pm-history-container td,
+.pm-history-container th {
+  padding: 10px;
+}
+.pm-history-container tr:nth-child(even) {
+  background-color: #cccccc;
+}
+.pm-history-container tr:hover {
+  background-color: #ff0000;
+}
+.equipment-container {
+  width: 30%;
+  margin: 0 5%;
+  float: left;
+}
+.equipment {
+  width: 100%;
+  float: left;
+  background-color: #cccccc;
+  margin: 10px 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}

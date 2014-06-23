@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+}
+.wrapper {
+  max-width: 1200px;
+  min-width: 340px;
+  margin: 0 auto;
+}
+#header {
+  width: 100%;
+  float: left;
+  background-color: #242424;
+}
+#header a {
+  text-align: center;
+  text-decoration: none;
+  color: #dbdbdb;
+}
+.nav-wrapper {
+  width: 100%;
+  float: left;
+  background-color: rgba(25, 25, 88, 0.69);
+}
+#navigation {
+  width: 90%;
+  margin: 0 5%;
+  float: left;
+}
+#navigation span {
+  min-width: 100px;
+  float: left;
+  padding: 10px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin: 0 1px;
+}
+#navigation span img {
+  width: 20px;
+  float: right;
+  margin-left: 15px;
+  opacity: .9;
+  border-radius: 10px;
+}
+#navigation span img:hover {
+  background-color: #ff0000;
+}
+#navigation span:hover {
+  cursor: pointer;
+}
+#navigation .active-nav {
+  background-color: #FFFFFF;
+}
